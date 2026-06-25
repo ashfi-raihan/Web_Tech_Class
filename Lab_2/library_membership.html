@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>Personal Information</legend>
+            
+            <label for="fname">Full Name: </label>
+            <input type="text" name="fname" id="fname" placeholder="Full Name">
+            <br> <br>
+
+            <label for="mId">Menbership ID: </label>
+            <input type="text" name="mId" id="mId" placeholder="ex: M10" required>
+            <br> <br>
+
+            <label for="email">Email Address: </label>
+            <input type="email" name="email" id="email" placeholder="abc@gmail.com" required>
+            <br><br>
+
+            <label for="phn">Phone Number:</label>
+            <input type="tel" name="phn" id="phn" placeholder="01XXXXXXXXX" required>
+            <br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob" id="dob" required>
+            <br><br>
+            
+            Gender:
+            <input type="radio" name="gender" id="male" value="male" required> 
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female" required> 
+            <label for="female">Famale</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Membership Information </legend>
+            <label for="membershipType">Membership Type:</label>
+            <select name="membershipType" id="membershipType">
+                <option value="student">Student</option>
+                <option value="Faculty">Faculty</option>
+                <option value="Researcher">Researcher</option>
+                <option value="GeneralMember">General Member</option>
+            </select>
+            <br><br>
+            <label for="preferedSection">Preferred Library Section: </label>
+            <select name="preferedSection" id="preferedSection">
+                <option value="">Choose your section</option>
+                <option value="sci&tech">Science & Technology</option>
+                <option value="Literature">Literature</option>
+                <option value="Bussines">Bussines Studies</option>
+                <option value="History">History</option>
+                <option value="art">Art and Culture</option>
+            </select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Reading Preferrenes</legend>
+            <label for="bookCatagory">Select Favourite Book Catagory:</label>
+            <br><br> 
+            <input type="checkbox" name="bookCatagory" id="fiction" value="fiction">
+            <label for="fiction">Fiction</label>
+
+            <input type="checkbox" name="bookCatagory" id="Non-Fiction" value="Non-Fiction">
+            <label for="Non-Fiction">Non-Fiction</label>
+
+            <input type="checkbox" name="bookCatagory" id="Science" value="Science">
+            <label for="Science">Science</label>
+
+            <input type="checkbox" name="bookCatagory" id="Technology" value="Technology">
+            <label for="Technology">Technology</label>
+
+            <input type="checkbox" name="bookCatagory" id="Biography" value="Biography">
+            <label for="Biography">Biography</label>
+
+            <input type="checkbox" name="bookCatagory" id="History" value="History">
+            <label for="History">History</label>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Library Services</legend>
+            <label for="services">Select Services You Want To Use:</label>
+            <br><br>
+            <input type="checkbox" name="services" id="Borrowing" value="Borrowing">
+            <label for="Borrowing">Book Borrowing</label>
+
+            <input type="checkbox" name="services" id="Digital" value="Digital">
+            <label for="Digital">Digital Library Access</label>
+
+            <input type="checkbox" name="services" id="Reading_Room" value="Reading_Room">
+            <label for="Reading_Room">Reading Room</label>
+
+            <input type="checkbox" name="services" id="Research" value="Research">
+            <label for="Research">Research Assistant</label>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Additonal Information</legend>
+            <label for="adress">Current Address</label><br>
+            <textarea name="address" id="address"></textarea><br>
+
+            <label for="ephn">Emergency Contact Number:</label><br>
+            <input type="tel" name="ephn" id="ephn">
+            <br><br>
+            
+            <label for="reason">Reason For joining</label><br>
+            <textarea name="reason" id="reason"></textarea><br>
+
+            <label for="suggestions">suggestions for Improvements</label><br>
+            <textarea name="Suggestions" id="suggestions" placeholder="Max 250 characters"></textarea>
+
+        </fieldset>
+        
+        <button>Submit</button>
+        <button>Reset</button>
+    </form>
+</body>
+</html>
